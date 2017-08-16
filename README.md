@@ -1,7 +1,8 @@
 ** Draft :
 
 # AWS IoT SDK for Windows 
-As of now Renesas IoT boards (Synergy Platform based) doesn't have any SDK support for AWS IoT.  The goal of this project is to understand AWS IoT on Windows OS, port the code for Renesas IoT kits, and also to combine the open source code from MbedTLS and  MQTT protocol in order to communicate with AWS IoT, which uses mutual authentication. 
+As of now Renesas IoT boards (Synergy Platform based) doesn't have any SDK support for AWS IoT.  The goal of this project is to understand AWS IoT on Windows OS, port the code for Renesas IoT kits, and also to combine the open source code from MbedTLS and  MQTT protocol in order to communicate with AWS IoT. This demo example can be used to verify your IoT application end to end on your developement system like windows or Mac instead of trying on hardware directly. 
+   
 
 # Requirements:
 
