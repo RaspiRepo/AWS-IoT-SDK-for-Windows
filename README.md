@@ -1,7 +1,6 @@
-** Draft :
 
 # AWS IoT SDK for Windows 
-As of now Renesas IoT boards (Synergy Platform based) doesn't have any SDK support for AWS IoT.  The goal of this project is to understand AWS IoT on Windows OS, port the code for Renesas IoT kits, and also to combine the open source code from MbedTLS and  MQTT protocol in order to communicate with AWS IoT. This demo example can be used to verify your IoT application end to end on your developement system like windows or Mac instead of trying on hardware directly. 
+As of now Renesas IoT boards (Synergy Platform based) doesn't have any SDK support for AWS IoT.  The goal of this project is to understand AWS IoT on Windows OS, port the code for Renesas IoT kits, Windows 10 IoT Core supporetd boards,  and also to combine the open source code from MbedTLS and  MQTT protocol in order to communicate with AWS IoT. This demo example can be used to verify your IoT application end to end on your developement system like windows or Mac instead of trying on hardware directly. 
    
 
 # Requirements:
@@ -39,15 +38,21 @@ Modify the predefined aws_iot_config.h  file with the corresponding certificatio
 
 
 # Step5:
+To update changes to MQTT payload or thing name open **awsiot_src\aws_iot_interface\subscribe_publish_sample.c** 
 
-To make MQTT topic/thing name update **Line number 152** according to your need. For example **Params.pTopic = "livingroom_airquality";**
+MQTT topic/thing name is in  **Line number 152**. 
+     For example **Params.pTopic = "livingroom_airquality";**
 
-If you want to construct your own JSON payload for your application then opne file name **"subscribe_publish_sample.c"** change **Line number 174**. Rebuild and Run the the application.
+To construct your own JSON payload for your application then change **Line number 174**. 
 
+Rebuild and Run the the application. Check the changes in AWS IoT Cpnsole Dashboard under "Test". Refer above screen shot.
 
+The example code provided in this demo will connect AWS IoT and publish MQTT topic 5 times and loop stops. 
 
+# Future Work
 
-
-
-
+- Convert this Project into Raspberry PI Raspian/Windows 10 IoT core.
+- Explore and make the changes to project to support Azure/Google IoT cloud.
+- Port the code to Renesas IoT kits (Threadx RTOS, Synergy Software Platform) such as SKS7G2, S5D9 boards.
+- .....
 
