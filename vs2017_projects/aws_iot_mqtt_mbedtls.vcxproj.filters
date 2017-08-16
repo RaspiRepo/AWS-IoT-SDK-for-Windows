@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTClient.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTConnectClient.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTDeserializePublish.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTPacket.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTSerializePublish.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTSubscribeClient.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\MQTTPacket\src\MQTTUnsubscribeClient.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\aws_iot_interface\aws_iot_json_utils.c">
+      <Filter>aws_iot_interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\aws_iot_interface\aws_iot_mqtt_embedded_client_wrapper.c">
+      <Filter>aws_iot_interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\aws_iot_interface\jsmn.c">
+      <Filter>aws_iot_interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\aws_iot_interface\network_mbedtls_wrapper.c">
+      <Filter>aws_iot_interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\aws_iot_interface\subscribe_publish_sample.c">
+      <Filter>aws_iot_interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\awsiot_src\aws_iot_interface\timer.c">
+      <Filter>aws_iot_interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mqtt">
+      <UniqueIdentifier>{82781ac0-48d3-43c4-8071-ed4f08c0891d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aws_iot_interface">
+      <UniqueIdentifier>{fb4cadd9-f8c6-4e4e-b16e-639892ac9b70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTClient.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTConnect.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTMessage.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTPacket.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTPublish.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTReturnCodes.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTSubscribe.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\MQTTUnsubscribe.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\MQTTPacket\src\StackTrace.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\aws_iot_config.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\aws_iot_error.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\aws_iot_json_utils.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\aws_iot_log.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\aws_iot_mqtt_interface.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\aws_iot_version.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\jsmn.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\network_interface.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\timer_interface.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\awsiot_src\aws_iot_interface\timer_linux.h">
+      <Filter>aws_iot_interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
