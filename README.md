@@ -14,7 +14,12 @@ As of now Renesas IoT boards (Synergy Platform based) doesn't have any SDK suppo
 Follow the instructions in AWS IoT documentation for creating  and downloading the above mentioned certificates in to "certs" folder.
 
 # Step2:
- Modify the predefined aws_iot_config.h  file with the corresponding certification name and AWS data center details.
+Download/pull this repository to your PC, open Visual Studio file "mbedTLS.sln" under folder name "vs2017_projects".  In case starup project is "mbedTLS" then change "aws_iot_mqtt_mbedtls" as startup project.  You can do this by right click on "aws_iot_mqtt_mbedtls" and "set as Startup Project" 
+
+![vs-startup1](https://user-images.githubusercontent.com/7789293/29370538-86ffbab2-825a-11e7-9c9d-d15f85fe63d8.png)
+
+# Step3:
+Modify the predefined aws_iot_config.h  file with the corresponding certification name and AWS data center details.
 
     // =================================================
     #define AWS_IOT_MQTT_HOST              "axxxx2fiyuf.iot.us-east-1.amazonaws.com" ///< Customer     specific MQTT HOST. The same will be used for Thing Shadow
@@ -26,9 +31,18 @@ Follow the instructions in AWS IoT documentation for creating  and downloading t
     #define AWS_IOT_CERTIFICATE_FILENAME   "..\\certs\\000000cc5-certificate.pem.crt" < device signed certificate file name
     #define AWS_IOT_PRIVATE_KEY_FILENAME   "..\\certs\\000000ccc5-private.pem.key" //Device private key filename
 
+# Step4:
+ Build and Run the application. If certificate file names reference mentioned in Step 3 present application will do TLS handshake sequence and then send JSon formated sensor information to AWS IoT using MQTT protocol.
+ 
+ ![aws-iot-thing-log](https://user-images.githubusercontent.com/7789293/29371150-69c58588-825c-11e7-97f4-6045115c3bde.png)
+ 
 
 
+# Step5:
 
+To make MQTT topic/thing name update **Line number 152** according to your need. For example **Params.pTopic = "livingroom_airquality";**
+
+If you want to construct your own JSON payload for your application then opne file name **"subscribe_publish_sample.c"** change **Line number 174**. Rebuild and Run the the application.
 
 
 
