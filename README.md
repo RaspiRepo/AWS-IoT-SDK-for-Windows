@@ -47,7 +47,7 @@ To construct your own JSON payload for your application then change **Line numbe
 
 Rebuild and Run the the application. Check the changes in AWS IoT Cpnsole Dashboard under "Test". Refer above screen shot.
 
-The example code provided in this demo will connect AWS IoT and publish MQTT topic 5 times and loop stops. 
+The example code provided in this demo will connect AWS IoT and publish MQTT Indoor AirQuality sensor value 5 times and loop stops. 
 
 # Future Work
 
