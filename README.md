@@ -1,3 +1,5 @@
+** Draft :
+
 # AWS IoT SDK for Windows 
 
 To understand in depth on AWS IoT on Windows OS then later port the same code for ThreadX RTOS  supported boards such as Renesas IoT kits.  As of now Renesas IoT boards (Synergy Platform based) don't support any framework or driver to connect AWS IoT Cloud. 
