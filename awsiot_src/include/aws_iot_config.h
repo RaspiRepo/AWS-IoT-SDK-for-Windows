@@ -24,13 +24,13 @@
 
 // Get from console
 // =================================================
-#define AWS_IOT_MQTT_HOST              "a965f4oip356e.iot.us-east-1.amazonaws.com" ///< Customer specific MQTT HOST. The same will be used for Thing Shadow
+#define AWS_IOT_MQTT_HOST              "xxxxxxx.iot.us-east-1.amazonaws.com" ///< Customer specific MQTT HOST. The same will be used for Thing Shadow
 #define AWS_IOT_MQTT_PORT              8883 ///< default port for MQTT/S
 #define AWS_IOT_MQTT_CLIENT_ID         "Renesas_sks7g2" ///< MQTT client ID should be unique for every device
 #define AWS_IOT_MY_THING_NAME 		   "Renesas_sks7g2" ///< Thing Name of the Shadow this device is associated with
 #define AWS_IOT_ROOT_CA_FILENAME       "..\\certs\\ca.perm" ///< Root CA file name
-#define AWS_IOT_CERTIFICATE_FILENAME   "..\\certs\\4810dd7cc5-certificate.pem.crt" //"cert.pem" ///< device signed certificate file name
-#define AWS_IOT_PRIVATE_KEY_FILENAME   "..\\certs\\4810dd7cc5-private.pem.key" //"privkey.pem" ///< Device private key filename
+#define AWS_IOT_CERTIFICATE_FILENAME   "..\\certs\\xxxxxx-certificate.pem.crt" //"cert.pem" ///< device signed certificate file name
+#define AWS_IOT_PRIVATE_KEY_FILENAME   "..\\certs\\xxxxxx-private.pem.key" //"privkey.pem" ///< Device private key filename
 // =================================================
 
 // MQTT PubSub
