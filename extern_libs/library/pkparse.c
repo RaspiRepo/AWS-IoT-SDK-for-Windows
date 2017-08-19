@@ -141,7 +141,7 @@ int mbedtls_pk_parse_keyfile( mbedtls_pk_context *ctx,
         return( ret );
 
 
-	memcpy(buf, aws_prv_key, n);
+//	memcpy(buf, aws_prv_key, n);
 
     if( pwd == NULL )
         ret = mbedtls_pk_parse_key( ctx, buf, n, NULL, 0 );
