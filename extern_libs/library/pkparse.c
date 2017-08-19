@@ -127,31 +127,7 @@ int mbedtls_pk_load_file( const char *path, unsigned char **buf, size_t *n )
 
 uint8_t aws_prv_key[2400] = {
 	"-----BEGIN RSA PRIVATE KEY-----\n"
-	"MIIEowIBAAKCAQEA2FW7sAFSKBi2eOjwnLNsS0/88FMN1F2DVwoB6WduNkuUaiKn\n"
-	"oXUzX2PVvlQfP9pL81locRbjX8SfEzL/9/N7SfqwVUChLY3CX+w0Zx7LJ6NPT03Z\n"
-	"IDhyHW1AVxoLwY7/Xu2K32NsBM+iLm38A5JFfAxFkcBLjijkq+7tm3ywa1zhJ2AV\n"
-	"lzqrCK+cpRSbBf0r4Qyew55iRAEvX8oZoUexnMVEMeHLP9qYe0xG2dZck2q0wEnj\n"
-	"rRiX72tk0kd5kLXPyvHtAE7ObP85HDMgmViQqUVQbAJ4/F9IFBbazUv7sDfxWU12\n"
-	"NuUWJNsuh8VrQlEP5gtl48CS0QJ4o/NVtBy3VwIDAQABAoIBABIBuNiik4MQ44dW\n"
-	"5Eg2ywnNw6EBWMJXcko5ZAVYfZz5V4YqEkfnKHqFJdJs0BkRg4bi50WagRyEkjUX\n"
-	"5qRt2NJEko7WDVRsW0R+tbHrpz9KYZyZPzxmVmFKqbNWUKowy+LL5OZJMUGJQteY\n"
-	"ggSOFUiJAPVryx4vGzGQdqidjVWyQz5GkdP0dtCVCDHZ3fgOMke52C2Y5pOXV9Fa\n"
-	"9CXl/2yQlQXsZlg0hCuwYdWrZlaoPtHSqxDAaBNqBk4duKXmeLCvehGWOxZxqCfv\n"
-	"Enrr1r+tHQUZSzwwoZ0b5Uf5VaVTFEYy15F/X5wXUTA1TmM/7Ram72a8PloBJQWz\n"
-	"XdrGdvECgYEA8gQS9jyvFuJrFAQEDUozjPYYek7xSHlssJ2Jj2tpoRwK5nWTzDZg\n"
-	"CzBjKp2CUkJjo3NKpHNrVUwWN0bd05c0PPYKPT09uLGBiA7fPcTO9y3olMg+Nbfp\n"
-	"J3mnEG4SD+V6MVwc8PZXfwNPZ98oiImSADZ4G0oPH0i3MuYJmbZZlI8CgYEA5NXI\n"
-	"WrHd/2GL+IOvFvV0wbI1zRlxEeJUgtsWp7xoQaiSHruIsT8gJfHEAvAyoEze06He\n"
-	"lt6ok1FvqMZO0NbF1AJfLi/VyAhTkVjTj8P02UgfLQLgu7ZpjzplKolXCP+Atq8X\n"
-	"8MBkPZFh2txOTD1mrWN0aMqcPDDjXpMkXrxf5LkCgYAzoCLbW/6NhycIUgL7QsTU\n"
-	"YPq/vG9D4oMI+dIKQgN6Vp0MpDAu87pxKJU+1fKi0X6ns0RM6EIRI/XpPLi9FhgS\n"
-	"mPl+Lr4n09WpzGJarszndWeTtVNv6hdWUGEO5Cv+MBlsxhV2YVYwxef+ZGAlIBOA\n"
-	"8B2W1Kl9JunNdby+iWN6iQKBgHCIpYfccqTVbsUe1SsAOJPMtOKRAWbfG9piLaj9\n"
-	"YXPwlzMf3F/2ADRIybD8OJlWVDpVHyaohtQztyqTo0zWYeEZ7X7ELWi6l4Yh3aCU\n"
-	"qEN2UUaMZMJLOWwjNn8NnUyigcTVJHvT0Tfp1+qObr7VbzoTb7rc8Ko1DIuE5tzj\n"
-	"3HCZAoGBANM0hWl3uiyCrhifRs6mJr+7DDTbCkeRjLf7WXtlxnFkRI6aZmpstxa3\n"
-	"IVp10fBEtGQGXegp9esssexofF8swlDVsmGwY52F/ezlUmau8GuLx5q+Y5cRCEzL\n"
-	"4YvVo3M/3Qmg483O7XOYGCyr97+JbwIT8KgcmayHSFqwTrKR/lgx\n"
+	
 	"-----END RSA PRIVATE KEY-----\n"
 };
 int mbedtls_pk_parse_keyfile( mbedtls_pk_context *ctx,
